@@ -1,23 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
+import Navbar from "./components/Navbar";
+import Homepage from "./components/Homepage";
+import Timezone from "./components/Timezone";
+import Table from "./components/Table";
+import moment from "moment-timezone";
+import { useState } from "react";
+import { Route, Routes } from "react-router-dom";
+import Convert from "./components/Convert";
 
 function App() {
+  const [zones, setzones] = useState(moment.tz.names());
+
+  setInterval(() => {
+    setzones(moment.tz.names());
+  }, 1000);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Navbar />
+      <Routes>
+        <Route path="/home" element={<Homepage />} />
+        <Route path="/allLocations" element={<Table zones={zones} />} />
+        <Route path="/convertTimezones" element={<Convert />} />
+      </Routes>
     </div>
   );
 }
