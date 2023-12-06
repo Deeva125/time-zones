@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/time-zones/static/css/main.073c9b0a.css",
-    "main.js": "/time-zones/static/js/main.b752ec02.js",
+    "main.js": "/time-zones/static/js/main.1bcb3776.js",
     "static/js/787.93cfd212.chunk.js": "/time-zones/static/js/787.93cfd212.chunk.js",
     "static/media/logo.svg": "/time-zones/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/time-zones/index.html",
     "main.073c9b0a.css.map": "/time-zones/static/css/main.073c9b0a.css.map",
-    "main.b752ec02.js.map": "/time-zones/static/js/main.b752ec02.js.map",
+    "main.1bcb3776.js.map": "/time-zones/static/js/main.1bcb3776.js.map",
     "787.93cfd212.chunk.js.map": "/time-zones/static/js/787.93cfd212.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.073c9b0a.css",
-    "static/js/main.b752ec02.js"
+    "static/js/main.1bcb3776.js"
   ]
 }
