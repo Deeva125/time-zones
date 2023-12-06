@@ -24,7 +24,7 @@ function Homepage() {
   ];
 
   return (
-    <div className="container bg-primary">
+    <div className="container ">
       <Table zones={zones} />
     </div>
   );

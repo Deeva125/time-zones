@@ -7,6 +7,7 @@ import Table from "./components/Table";
 import moment from "moment-timezone";
 import { useState } from "react";
 import { Route, Routes } from "react-router-dom";
+import About from "./components/About";
 import Convert from "./components/Convert";
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
         <Route path="/home" element={<Homepage />} />
         <Route path="/allLocations" element={<Table zones={zones} />} />
         <Route path="/convertTimezones" element={<Convert />} />
+        <Route path="/about" element={<About />}></Route>
       </Routes>
     </div>
   );

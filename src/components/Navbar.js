@@ -37,12 +37,14 @@ function Navbar() {
                 </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#">
-                  Pricing
+                <a className="nav-link" href="/convertTimezones">
+                  Convert Timezones
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link disabled">Disabled</a>
+                <a className="nav-link" href="/about">
+                  About
+                </a>
               </li>
             </ul>
           </div>
