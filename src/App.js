@@ -21,7 +21,7 @@ function App() {
     <div>
       <Navbar />
       <Routes>
-        <Route path="/home" element={<Homepage />} />
+        <Route path="/" element={<Homepage />} />
         <Route path="/allLocations" element={<Table zones={zones} />} />
         <Route path="/convertTimezones" element={<Convert />} />
         <Route path="/about" element={<About />}></Route>
